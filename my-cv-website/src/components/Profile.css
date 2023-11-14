@@ -1,0 +1,36 @@
+/* src/components/Profile.css */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-text {
+    width: 70%; /* Adjust the width as needed */
+  }
+  
+  .profile-photo {
+    width: 20%; /* Adjust the width as needed */
+    position: relative;
+  }
+  
+  .profile-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 8px solid #fff; /* Adjust border size and color as needed */
+    border-radius: 50%; /* To create a circular frame */
+  }
+  
+  .profile-photo::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border: 2px solid #ccc; /* Adjust border size and color as needed */
+    border-radius: 50%; /* To create a circular frame */
+  }
+
+  
