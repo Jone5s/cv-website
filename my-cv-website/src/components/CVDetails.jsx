@@ -3,9 +3,61 @@ import './CVDetails.css'; // Import the CSS file
 
 const CVDetails = () => {
   const [selectedSection, setSelectedSection] = useState(null);
+  const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedHobby, setSelectedHobby] = useState(null);
+
+  const Skill = ({ skill, onClick }) => {
+    return (
+      <div className="skill-item" onClick={() => onClick(skill)}>
+        {skill.name}
+      </div>
+    );
+  };
+
+  const Item = ({ item, onClick }) => {
+    return (
+      <div className="skill-item" onClick={() => onClick(item)}>
+        {item.name}
+      </div>
+    );
+  };
+  
+  const hobbiesData = [
+    { name: 'Tennis', description: 'I enjoy playing tennis regurally once a week for physical fitness and mental relaxation.' },
+    { name: 'Videogames', description: 'Passionate about playing video games, especially RPGs and competitive multiplayer games.' },
+    { name: 'Chess', description: 'Regular chess player focusing on strategy development and competition. Im ~1600 rated in online chess and sometimes play over the board at the local chess club.' },
+    { name: 'Programming', description: 'I love coding and often work on personal projects to enhance my technical skills.' },
+    { name: 'Nature Walks', description: 'Frequent nature explorer, enjoying hikes and outdoor photography.' },
+  ];
+
+  const skillsData = [
+    { name: 'C++', description: 'Most widely used language in college and own projects' },
+    { name: 'JavaScript', description: 'Extensively used for front-end development in several web projects, implementing interactive features and client-side logic in modern web applications.' },
+    { name: 'SQL', description: 'Employed for database management and querying, especially in web applications requiring complex data retrieval and reporting functionalities..' },
+    { name: 'C#', description: 'Used in school projects and scripting in Unity for game development projects.' },
+    { name: 'Blender', description: 'Applied in 3D modeling and animation projects, including character design and environmental art for indie game projects.' },
+    { name: 'Amazon AWS', description: 'Used in course and for deploying own projects.' },
+    { name: 'HTML/CSS', description: 'Developed several web applications and interactive websites.' },
+    { name: 'Git', description: 'Used for version control in all of my software projects.' },
+    { name: 'Java', description: 'Applied in developing Android applications and backend services, emphasizing clean code practices and object-oriented design.' },
+    { name: 'Docker', description: 'Utilized for containerizing applications, ensuring consistency across development, testing, and production environments.' },
+    { name: 'MS Office', description: 'Regularly used for documentation and preparing presentations, contributing to effective project management and reporting.' },
+    { name: 'Unity', description: 'Used for creating several 2D and 3D games, focusing on gameplay programming, physics, and user interface design.' },
+  ];
 
   const handleSectionClick = (section) => {
     setSelectedSection(section === selectedSection ? null : section);
+    if (section !== 'skills') {
+      setSelectedSkill(null);
+    }
+  };
+
+  const handleSkillClick = (skill) => {
+    setSelectedSkill(skill);
+  };
+
+  const handleHobbyClick = (hobby) => {
+    setSelectedHobby(hobby);
   };
 
   const details = {
@@ -22,9 +74,9 @@ const CVDetails = () => {
             specialization.
           </p>
           <p>
-            In the link you can see the results and grades of all the studies I have listed:
+            In the link you can see the results and grades of all the studies I have listed:&nbsp;
             <a href="https://opintopolku.fi/koski/opinnot/d4bb47aaebe44c9e870ee96c306da47d" target="_blank" rel="noopener noreferrer">
-              Link to Results
+            Link to Results
             </a>
           </p>
           <p>
@@ -71,32 +123,23 @@ const CVDetails = () => {
       ),
     },
     skills: {
-        title: 'Skills',
-        content: (
+      title: 'Skills',
+      content: (
+        <>
           <div className="skills-grid">
-            <div className="skills-column">
-              <ul>
-                <li>C++</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>C#</li>
-                <li>Amazon AWS</li>
-                <li>Blender</li>
-              </ul>
-            </div>
-            <div className="skills-column">
-              <ul>
-                <li>HTML/CSS</li>
-                <li>Git</li>
-                <li>Java</li>
-                <li>Docker</li>
-                <li>Microsoft Office</li>
-                <li>Unity</li>
-              </ul>
-            </div>
+              {skillsData.map((skill) => (
+              <Skill key={skill.name} skill={skill} onClick={handleSkillClick} />
+              ))}
           </div>
-        ),
-      },
+          {selectedSkill && (
+            <div className="skill-description">
+              <strong>{selectedSkill.name}: </strong>
+              <span>{selectedSkill.description}</span>
+            </div>
+          )}
+        </>
+      ),
+    },
     education: {
       title: 'Education',
       content: (
@@ -128,19 +171,25 @@ const CVDetails = () => {
       ),
     },
     hobbies: {
-        title: 'Hobbies',
-        content: (
-          <ul>
-            <li>Tennis</li>
-            <li>Movies</li>
-            <li>Videogames</li>
-            <li>Chess</li>
-            <li>Computers and programming</li>
-            <li>Nature walks</li>
-          </ul>
-        )
-      }
+      title: 'Hobbies',
+    content: (
+      <>
+        <div className="skills-grid">
+          {hobbiesData.map((hobby) => (
+            <Item key={hobby.name} item={hobby} onClick={handleHobbyClick} />
+          ))}
+        </div>
+        {selectedHobby && (
+          <div className="skill-description">
+            <strong>{selectedHobby.name}: </strong>
+            <span>{selectedHobby.description}</span>
+          </div>
+        )}
+      </>
+    ),
+   }
   };
+
 
   return (
     <div className="cv-details">

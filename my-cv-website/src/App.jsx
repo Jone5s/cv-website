@@ -1,21 +1,21 @@
 import React from 'react';
-import Profile from './components/Profile.jsx';
-import CVDetails from './components/CVDetails.jsx';
-import MainNavigation from './components/MainNavigation.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainNavigation from './components/MainNavigation';
+import CVPage from './pages/Home';  // Import your CV page component
+import Questbook from './pages/QuestBook';  // Import your Quest Book page component
+import About from './pages/About';  // Import your About page component
 
-import './App.css'
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <main>
-      <MainNavigation></MainNavigation>
-      <h1>Aleksi Leppinen</h1>
-        <Profile />
-        <CVDetails />
-      </main>
-    </div>
+    <Router>
+      <MainNavigation />
+      <Routes>
+        <Route path="/" element={<CVPage />} />
+        <Route path="/quest-book" element={<Questbook />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
