@@ -6,7 +6,8 @@ const About = () => {
     <div className="about-container">
       <h2>About</h2>
       <p>
-        Welcome to my personal CV website! This site showcases my knowledge, skills, experience, and education.
+        Welcome to my personal CV website! This site showcases my knowledge, skills, experience, and education. 
+        This is a work in progress and I will be improving and updating it over time.
       </p>
       <p>
         This site is a single page application created with React and Vite. The source code for this page is available to see in my 
