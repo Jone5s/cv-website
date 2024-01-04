@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainNavigation from './components/MainNavigation';
-import CVPage from './pages/Home';  // Import your CV page component
-import Questbook from './pages/QuestBook';  // Import your Quest Book page component
-import About from './pages/About';  // Import your About page component
+import CVPage from './pages/Home.jsx';
+import Questbook from './pages/QuestBook.jsx';
+import About from './pages/About.jsx';
 
 function App() {
   return (
