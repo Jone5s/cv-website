@@ -8,7 +8,7 @@ const MainNavigation = () => {
       <nav>
         <ul className='list'>
           <li><Link to="/">CV</Link></li>
-          <li><Link to="/quest-book">Quest Book</Link></li>
+          {/*<li><Link to="/quest-book">Quest Book</Link></li>*/}
           <li><Link to="/about">About</Link></li>
         </ul>
       </nav>

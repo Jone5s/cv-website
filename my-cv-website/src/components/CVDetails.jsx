@@ -32,8 +32,8 @@ const CVDetails = () => {
 
   const skillsData = [
     { name: 'C++', description: 'Most widely used language in college and own projects' },
-    { name: 'JavaScript', description: 'Extensively used for front-end development in several web projects, implementing interactive features and client-side logic in modern web applications.' },
-    { name: 'SQL', description: 'Employed for database management and querying, especially in web applications requiring complex data retrieval and reporting functionalities..' },
+    { name: 'JavaScript', description: 'Extensively used for front-end development in several web projects, implementing interactive features and client-side logic in modern web applications. I`m also currently self studying TypeScript.' },
+    { name: 'SQL', description: 'Employed for database management and querying, especially in web applications requiring complex data retrieval and reporting functionalities.' },
     { name: 'C#', description: 'Used in school projects and scripting in Unity for game development projects.' },
     { name: 'Blender', description: 'Applied in 3D modeling and animation projects, including character design and environmental art for indie game projects.' },
     { name: 'Amazon AWS', description: 'Used in course and for deploying own projects.' },
@@ -122,6 +122,21 @@ const CVDetails = () => {
         </>
       ),
     },
+    references: {
+      title: 'References',
+      content: (
+        <>
+          <p>
+            <strong>Mikko Helenius - Hertz Tampere</strong>
+          </p>
+          <p>+358 40 55527750 - mikko.helenius@hertz.fi</p>
+          <p>
+            <strong>Matti Haapaniemi - Amurin Sähköpaja</strong>
+          </p>
+          <p>+358 40 5738797 - huolto@amurinsahkopaja.fi</p>
+        </>
+      ),
+    },
     skills: {
       title: 'Skills',
       content: (
@@ -137,36 +152,6 @@ const CVDetails = () => {
               <span>{selectedSkill.description}</span>
             </div>
           )}
-        </>
-      ),
-    },
-    education: {
-      title: 'Education',
-      content: (
-        <>
-          <p>
-            <strong>ICT-engineer, Tampere University of Applied Sciences, Tampere</strong>
-          </p>
-          <p>AUGUST 2021 — PRESENT</p>
-          <p>
-            I have performed well so far, especially in programming courses and have chosen software engineering as my
-            specialization.
-          </p>
-          <p>
-            In the link you can see the results and grades of all the studies I have listed:
-            <a href="https://opintopolku.fi/koski/opinnot/d4bb47aaebe44c9e870ee96c306da47d" target="_blank" rel="noopener noreferrer">
-              Link to Results
-            </a>
-          </p>
-          <p>
-            <strong>Datanomi (Game Industry Focus), Suupohjan ammatti-instituutti, Kauhajoki</strong>
-          </p>
-          <p>AUGUST 2016 — MAY 2019</p>
-          <p>
-            I graduated with excellent grades. My weighted average was (on a scale of 1-3) 2.8. 
-            Here I learned a lot, mainly C# with Unity, but basic web development aswell. I also learned 3D-modeling with Blender
-            and the basics of game design.
-          </p>
         </>
       ),
     },
@@ -197,9 +182,9 @@ const CVDetails = () => {
       <div>
         <button onClick={() => handleSectionClick('education')}>Education</button>
         <button onClick={() => handleSectionClick('experience')}>Employment History</button>
+        <button onClick={() => handleSectionClick('references')}>References</button>
         <button onClick={() => handleSectionClick('skills')}>Skills</button>
         <button onClick={() => handleSectionClick('hobbies')}>Hobbies</button>
-        {/* Add more buttons for additional sections */}
       </div>
       {selectedSection && (
         <div>
