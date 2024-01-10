@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CVDetails.css'; // Import the CSS file
+import './CVDetails.css';
 
 const CVDetails = () => {
   const [selectedSection, setSelectedSection] = useState(null);
@@ -25,24 +25,24 @@ const CVDetails = () => {
   const hobbiesData = [
     { name: 'Tennis', description: 'I enjoy playing tennis regurally once a week for physical fitness and mental relaxation.' },
     { name: 'Videogames', description: 'Passionate about playing video games, especially RPGs and competitive multiplayer games.' },
-    { name: 'Chess', description: 'Regular chess player focusing on strategy development and competition. Im ~1600 rated in online chess and sometimes play over the board at the local chess club.' },
+    { name: 'Chess', description: 'Regular chess player online. Im ~1600 rated in online chess and sometimes play over the board at the local chess club.' },
     { name: 'Programming', description: 'I love coding and often work on personal projects to enhance my technical skills.' },
-    { name: 'Nature Walks', description: 'Frequent nature explorer, enjoying hikes and outdoor photography.' },
+    { name: 'Nature Walks', description: 'Frequent nature explorer, enjoying hikes and the outdoors in general.' },
   ];
 
   const skillsData = [
-    { name: 'C++', description: 'Most widely used language in college and own projects' },
-    { name: 'JavaScript', description: 'Extensively used for front-end development in several web projects, implementing interactive features and client-side logic in modern web applications. I`m also currently self studying TypeScript.' },
-    { name: 'SQL', description: 'Employed for database management and querying, especially in web applications requiring complex data retrieval and reporting functionalities.' },
+    { name: 'C++', description: 'Most widely used language in school and with own projects' },
+    { name: 'JavaScript', description: 'Extensively used for front-end development in several web projects, implementing interactive features and client-side logic in web applications. I`m also currently self studying TypeScript.' },
+    { name: 'SQL', description: 'Employed for database management and querying.' },
     { name: 'C#', description: 'Used in school projects and scripting in Unity for game development projects.' },
-    { name: 'Blender', description: 'Applied in 3D modeling and animation projects, including character design and environmental art for indie game projects.' },
-    { name: 'Amazon AWS', description: 'Used in course and for deploying own projects.' },
+    { name: 'Blender', description: 'Applied in 3D modeling and animation projects, including character design and environmental art for game projects.' },
+    { name: 'Amazon AWS', description: 'Used in courses and for deploying own projects.' },
     { name: 'HTML/CSS', description: 'Developed several web applications and interactive websites.' },
     { name: 'Git', description: 'Used for version control in all of my software projects.' },
-    { name: 'Java', description: 'Applied in developing Android applications and backend services, emphasizing clean code practices and object-oriented design.' },
-    { name: 'Docker', description: 'Utilized for containerizing applications, ensuring consistency across development, testing, and production environments.' },
+    { name: 'Java', description: 'Applied in developing Android applications and other projects, emphasizing object-oriented design.' },
+    { name: 'Docker', description: 'Utilized for containerizing applications.' },
     { name: 'MS Office', description: 'Regularly used for documentation and preparing presentations, contributing to effective project management and reporting.' },
-    { name: 'Unity', description: 'Used for creating several 2D and 3D games, focusing on gameplay programming, physics, and user interface design.' },
+    { name: 'Unity', description: 'Used for creating several 2D and 3D games, both mobile games and PC-games, focusing on gameplay programming, physics, and user interface design.' },
   ];
 
   const handleSectionClick = (section) => {

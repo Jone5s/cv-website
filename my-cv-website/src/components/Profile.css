@@ -1,4 +1,3 @@
-/* src/components/Profile.css */
 .profile-container {
     display: flex;
     align-items: center;
@@ -6,11 +5,11 @@
   }
   
   .profile-text {
-    width: 70%; /* Adjust the width as needed */
+    width: 70%;
   }
   
   .profile-photo {
-    width: 20%; /* Adjust the width as needed */
+    width: 20%;
     position: relative;
   }
   
@@ -18,7 +17,7 @@
     max-width: 100%;
     height: auto;
     display: block;
-    border: 8px solid #fff; /* Adjust border size and color as needed */
+    border: 8px solid #fff;
     border-radius: 50%; /* To create a circular frame */
   }
   
@@ -29,7 +28,7 @@
     left: -12px;
     right: -12px;
     bottom: -12px;
-    border: 2px solid #ccc; /* Adjust border size and color as needed */
+    border: 2px solid #ccc;
     border-radius: 50%; /* To create a circular frame */
   }
 

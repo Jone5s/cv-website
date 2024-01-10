@@ -61,7 +61,6 @@ const Guestbook = () => {
         <ul className="guestbook-entries">
         {guestbookEntries.map((entry, index) => (
             <li key={index} className="guestbook-entry">
-            {/* ... entry details ... */}
             </li>
         ))}
         </ul>

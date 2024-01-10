@@ -79,14 +79,14 @@
   }
 
   .hobbies-section {
-    background-color: #f7f7f7; /* Light background for the section */
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
   .hobbies-list {
-    list-style: none; /* Remove default list style */
+    list-style: none;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid */
@@ -94,7 +94,7 @@
   }
   
   .hobby-item {
-    background-color: #fff; /* Background for each item */
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
