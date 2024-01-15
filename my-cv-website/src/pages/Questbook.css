@@ -7,7 +7,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Styles for form elements */
   .guestbook-form {
     display: flex;
     flex-direction: column;
@@ -41,8 +40,7 @@
   .guestbook-form button:hover {
     background-color: #0056b3;
   }
-  
-  /* Styles for guestbook entries */
+
   .guestbook-entries {
     list-style-type: none;
     padding: 0;

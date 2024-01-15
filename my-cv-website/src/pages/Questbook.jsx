@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import './Questbook.css'
 
+// Work in progress :)
+
 const Guestbook = () => {
   const [guestbookEntries, setGuestbookEntries] = useState([]);
   const [name, setName] = useState('');
