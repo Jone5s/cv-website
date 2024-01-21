@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #333; /* Dark text on light background */
+    background-color: #f9f9f9; /* Slightly off-white background */
+  }
+
+  a {
+    color: #0066cc; /* Ensure links stand out */
+  }
+
+  /* Add other light-mode specific styles here */
+}

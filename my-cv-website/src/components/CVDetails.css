@@ -6,6 +6,7 @@
     background-color: #000000;
     max-width: 400px;
     margin: 0 auto;
+    color: #ffffff;
   }
   
   .cv-details h2 {
@@ -72,6 +73,7 @@
     padding: 10px;
     text-align: center;
     transition: background-color 0.3s;
+    color: #ffffff;
   }
   
   .skill-item:hover {
@@ -105,4 +107,21 @@
   .hobby-item:hover {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  @media (prefers-color-scheme: light) {
+    body {
+      color: #333; /* Dark text on light background */
+      background-color: #f9f9f9; /* Slightly off-white background */
+    }
+
+    p {
+      color: #ffffff;
+    }
+  
+    a {
+      color: #0066cc; /* Ensure links stand out */
+    }
+  
+    /* Add other light-mode specific styles here */
   }

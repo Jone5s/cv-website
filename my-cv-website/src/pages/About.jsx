@@ -19,8 +19,8 @@ const About = () => {
         <br></br>
         Things I intend to add to this site in the future:<br></br>
         - A quest book system which saves entries in a backend.<br></br>
-        - A drawpad for the quest book, where visitors can draw whatever if they want to.
-        - Frontend testing with Vitest
+        - A drawpad for the quest book, where visitors can draw whatever, if they want to.<br></br>
+        - Frontend testing with Vitest.
       </p>
     </div>
   );

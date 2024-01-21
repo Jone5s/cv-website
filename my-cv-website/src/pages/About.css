@@ -30,3 +30,15 @@
   .about-container a:hover {
     text-decoration: underline;
   }
+
+  @media (prefers-color-scheme: light) {
+    body {
+      color: #333;
+      background-color: #f9f9f9;
+    }
+  
+    a {
+      color: #0066cc; 
+    }
+ 
+  }

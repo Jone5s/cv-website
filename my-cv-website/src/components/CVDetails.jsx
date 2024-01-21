@@ -40,7 +40,9 @@ const CVDetails = () => {
     { name: 'HTML/CSS', description: 'Developed several web applications and interactive websites.' },
     { name: 'Git', description: 'Used for version control in all of my software projects.' },
     { name: 'Java', description: 'Applied in developing Android applications and other projects, emphasizing object-oriented design.' },
-    { name: 'Docker', description: 'Utilized for containerizing applications.' },
+    { name: 'Flutter and dart', description: 'Acquired hands-on experience in Flutter and Dart while developing cross-platform mobile applications in a course. Focused on creating responsive and user-friendly interfaces.' },
+    { name: 'Docker', description: 'Utilized Docker for containerizing applications, ensuring consistent environments across development and production.' },
+    { name: 'Figma', description: 'Used Figma for UI/UX design in Android apps and web projects, including coursework. Developed skills in crafting interactive prototypes and wireframes, emphasizing intuitive design and user experience.' },
     { name: 'MS Office', description: 'Regularly used for documentation and preparing presentations, contributing to effective project management and reporting.' },
     { name: 'Unity', description: 'Used for creating several 2D and 3D games, both mobile games and PC-games, focusing on gameplay programming, physics, and user interface design.' },
   ];
@@ -75,7 +77,7 @@ const CVDetails = () => {
           </p>
           <p>
             In the link you can see the results and grades of all the studies I have listed:&nbsp;
-            <a href="https://opintopolku.fi/koski/opinnot/d4bb47aaebe44c9e870ee96c306da47d" target="_blank" rel="noopener noreferrer">
+            <a href="https://opintopolku.fi/koski/opinnot/d075cfd48b27431ba13fb0055427ef3c" target="_blank" rel="noopener noreferrer">
             Link to Results
             </a>
           </p>
